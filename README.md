@@ -1,6 +1,7 @@
 ### 创建项目
 > mkdir demo && npm init -y
-...
+
+>...
 
 ### 文件目录
 ```
@@ -16,6 +17,7 @@
 ```
 ### 安装(本地安装)
 > yarn add webpack webpack-cli -D
+
 > yarn add vue ... -S
 
 
