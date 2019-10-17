@@ -1,9 +1,10 @@
-# 创建项目
+### 创建项目
 > mkdir demo
 > npm init -y
 ...
 
-# 文件目录
+### 文件目录
+```
 .
 ├── package.json
 ├── public
@@ -13,13 +14,13 @@
 │   └── main.js
 ├── webpack.config.js
 └── yarn.lock
-
-# 安装(本地安装)
+```
+### 安装(本地安装)
 > yarn add webpack webpack-cli -D
 > yarn add vue ... -S
 
 
-# 配置JS部分
+### 配置JS部分
 ```
 //webpack.config.js
 
@@ -37,7 +38,7 @@ module.exports = {
 
 ```
 
-# 配置html
+### 配置html
 > yarn add html-webpack-plugin -D
 
 ```
@@ -67,3 +68,6 @@ module.exports = {
   ]
 }
 ```
+
+### 构建
+> yarn start / npm run start
