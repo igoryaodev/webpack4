@@ -22,12 +22,12 @@ export default {
   },
 }
 </script>
-<style>
+<style lang="scss">
   .app {
     font-size: 30px;
-  }
-  img {
-    width: 200px;
-    height: auto;
+    img {
+      width: 200px;
+      height: auto;
+    }
   }
 </style>
