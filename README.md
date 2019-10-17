@@ -39,6 +39,52 @@ module.exports = {
 
 ```
 
+### 加载.vue
+> https://vue-loader.vuejs.org/
+
+> yarn add vue-loader vue-template-compiler -D
+```
+// node 内置
+const path = require('path')
+// webpack html 插件
+const Htmlplugin = require('html-webpack-plugin')
+// vue loader 插件
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
+
+module.exports = {
+   // 入口
+  entry: './src/main.js',
+  // 出口
+  output: {
+    filename: 'bundle.js', // 输出js文件名
+    path: path.resolve(__dirname, 'dist') // 输出文件目录
+  },
+  module: {
+    rules: [
+      {
+        test: /.vue$/,
+        loader: 'vue-loader'
+      }
+    ]
+  },
+  plugins: [
+    new Htmlplugin({
+      filename: './index.html',
+      minify: true, // 压缩
+      inject: true, //注入
+      template: './public/index.html', // 使用模板创建index.html
+      // favicon: './public/favicon.ico', // favicon
+      // title: 'test title',
+      // meta: '...'
+    }),
+    // vue loader 插件
+    new VueLoaderPlugin()
+  ]
+}
+```
+
+### 使用yarn start打包构建，然后在浏览器中打开demo/dist/index.html，页面显示App.vue中的内容
+
 ### 配置html
 > yarn add html-webpack-plugin -D
 
