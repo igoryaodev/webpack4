@@ -53,5 +53,8 @@ module.exports = {
     }),
     // vue loader 插件
     new VueLoaderPlugin()
-  ]
+  ],
+  devServer: {
+    contentBase: './dist'
+  }
 }
