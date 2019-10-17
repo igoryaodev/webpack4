@@ -1,6 +1,5 @@
 ### 创建项目
-> mkdir demo
-> npm init -y
+> mkdir demo && npm init -y
 ...
 
 ### 文件目录
