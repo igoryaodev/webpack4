@@ -72,3 +72,35 @@ module.exports = {
 
 ### 构建
 > yarn start / npm run start
+
+### vue项目编译打包
+> 配置文档https://vue-loader.vuejs.org/
+
+需引入的插件
+> yarn add vue-loader vue-template-compiler -D
+
+> 对应文档及分支 webpack-vue
+
+### 使用预处理器sass的配置项目
+
+需引入的插件
+> yarn add sass-loader node-sass vue-style-loader -D
+
+
+> 对应文档及分支 webpack-vue-sass
+
+### 其他静态文件的配置项目（图片、音视频、字体等）
+需引入的插件
+> yarn add file-loader -D
+
+或
+> yarn add url-loader -D
+
+> 对应文档及分支 webpack-other-assets
+
+### 添加web 服务器，实时重新加载(live reloading)
+
+> yarn add webpack-dev-server -D
+
+> 对应文档及分支 webpack-develop
+
